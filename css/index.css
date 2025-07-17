@@ -1,0 +1,43 @@
+@font-face  {
+    font-family: youyuan;
+    src: url("../font/youyuan.ttf") format("truetype");
+}
+body{
+    font-family: youyuan;
+    margin: 0;
+    padding: 0;
+    background-image: url("../image/2.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:80%;
+    height:auto;
+    margin:20px;
+    padding:20px;
+    border: solid gray 3px;
+}
+.content video,img{
+   width:75%;
+   height:auto;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* 左右分布：logo和导航链接 */
+    align-items: center;            /* 垂直居中 */
+    padding: 10px 20px;
+    background-color: #2c3e50;      /* 深蓝灰色背景 */
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
