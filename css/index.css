@@ -5,7 +5,7 @@
 body{
     display:flex;
     flex-direction: column;
-    font-family: YouYuan;
+    font-family: youyuan;
     margin: 0;
     padding: 0;
     background-image: url("../image/1.jpg");
