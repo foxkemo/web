@@ -8,18 +8,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/index.css" />
     <script src="./js/index.js"></script>
-
+    <script>
+        fetch("./navbar.html")
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById("navbar").innerHTML = html;
+          });
+    </script>
 </head>
 
+
+
 <body>
-    <h1 id="h1">登陆界面</h1>
-    <div class="navbar">
-        <a href="./html/data.html">表单数据呈现</a>
-        <a href="./register.html">注册</a>
-        <a href="./search.html">资源搜索</a>
-        <a href="./posts.html ">投稿</a>
-        <a href="https://github.com/foxkemo">我的GITHUB</a>
-    </div>
+    <h1 id="h1">注册界面</h1>
+  
+<div id="navbar"></div>
+
+
+
 
     <div class="container">
         <div id="content" class="content">
@@ -29,13 +35,16 @@
             <!-- <img src="./image/2.jpg" /> -->
             <!-- <video controls src="https://vdownload.hembed.com/105964-720p.mp4?secure=RxhkoE_6i0TTwK945MM4wg==,1752800676"></video> -->
         </div>
-        <form action="http://8.133.206.215/login" method="GET" class="form">
+        <form action="http://8.133.206.215/regist" method="GET" class="form">
+
             <lable for="name">你的名字</lable>
             <input id="name" type="text" name="" required>
             <lable for="password">密码</lable>
             <input id="password" type="password" name="" required>
-            <button type="submit">登陆</button>
-            <button type="button"><a href="./register.html">没有账号？点击跳转到注册页面</a></button>
+            <lable for="email">电子邮件</lable>
+            <input id="email" type="email" name="" required>
+            <button type="submit">注册</button>
+          
         </form>
     </div>
 </body>

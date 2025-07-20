@@ -2,6 +2,7 @@
     font-family: youyuan;
     src: url("../font/youyuan.ttf") format("truetype");
 }
+
 body{
     display:flex;
     flex-direction: column;
@@ -83,8 +84,12 @@ body{
         color: white;
         border: none;
         /* border-radius: 8px; */
-        cursor: pointer;
-        font-weight: bold;
+        /* cursor: pointer; */
         /* transition: background 0.3s; */
       
+}
+.form button a{
+    color:white;
+    /* text-decoration: none； */
+
 }
