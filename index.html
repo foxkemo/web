@@ -8,19 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/index.css" />
     <script src="./js/index.js"></script>
-
+    <script>
+        fetch("./navbar.html")
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById("navbar").innerHTML = html;
+            });
+    </script>
 </head>
 
 <body>
-    <h1 id="h1">登陆界面</h1>
-    <div class="navbar">
-        <a href="./html/data.html">表单数据呈现</a>
-        <a href="./register.html">注册</a>
-        <a href="./search.html">资源搜索</a>
-        <a href="./posts.html ">投稿</a>
-        <a href="https://github.com/foxkemo">我的GITHUB</a>
+    <div class="title" id="title">
+        <h1 id="h1">登陆界面</h1>
     </div>
-
+    <div id="navbar"></div>
     <div class="container">
         <div id="content" class="content">
             <p>西哈诺·德·贝热拉克 我们的情人， 不过是随便借个名字， 用幻想吹出的肥皂泡！ 把信拿去吧， 你可以使假戏成真。 我本来是无病呻吟，漫无目的地吐露着爱情…… 现在这些漂泊不定的鸟儿有地方栖息了。 你可以从信里看出来 拿去吧！
@@ -35,7 +36,9 @@
             <lable for="password">密码</lable>
             <input id="password" type="password" name="" required>
             <button type="submit">登陆</button>
-            <button type="button"><a href="./register.html">没有账号？点击跳转到注册页面</a></button>
+            <button type="button">
+                <a href="./register.html">没有账号？点击跳转到注册页面</a>
+            </button>
         </form>
     </div>
 </body>
