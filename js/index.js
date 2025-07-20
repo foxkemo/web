@@ -5,3 +5,4 @@ let registerform=document.getElementById("registerform");
 registerform.action=id+"/register";
 let a=document.getElementById("test");
 a.textContent="123";
+alert("1234");
