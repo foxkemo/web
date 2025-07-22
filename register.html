@@ -7,7 +7,6 @@
     <title id="title"> Title </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/index.css" />
-    <script src="./js/index.js"></script>
     <script>
         fetch("./navbar.html")
           .then(res => res.text())
@@ -17,38 +16,33 @@
     </script>
 </head>
 
-
-
 <body>
-        <div class="title">
-                <h1>注册界面</h1>
-        </div>
+<div class="title">
+    <h1>注册界面</h1>
+</div>
   
 <div id="navbar"></div>
-
-
-
-
-    <div class="container">
+<div class="container">
         <div  class="content">
-            <p id="test">西哈诺·德·贝热拉克 我们的情人， 不过是随便借个名字， 用幻想吹出的肥皂泡！ 把信拿去吧， 你可以使假戏成真。 我本来是无病呻吟，漫无目的地吐露着爱情…… 现在这些漂泊不定的鸟儿有地方栖息了。 你可以从信里看出来 拿去吧！
+            <p >西哈诺·德·贝热拉克 我们的情人， 不过是随便借个名字， 用幻想吹出的肥皂泡！ 把信拿去吧， 你可以使假戏成真。 我本来是无病呻吟，漫无目的地吐露着爱情…… 现在这些漂泊不定的鸟儿有地方栖息了。 你可以从信里看出来 拿去吧！
                 由于不是出自真心， 话就说得格外动听！</p>
 
             <!-- <img src="./image/2.jpg" /> -->
             <!-- <video controls src="https://vdownload.hembed.com/105964-720p.mp4?secure=RxhkoE_6i0TTwK945MM4wg==,1752800676"></video> -->
         </div>
-        <form id="registerform"  method="GET" class="form">
+        <form id="register form" action="http://localhost:8080/register"  method="POST" class="form">
 
             <lable for="name">你的名字</lable>
-            <input id="name" type="text" name="" required>
+            <input id="name" type="text" name="name" required>
             <lable for="password">密码</lable>
-            <input id="password" type="password" name="" required>
+            <input id="password" type="password" name="password" required>
             <lable for="email">电子邮件</lable>
-            <input id="email" type="email" name="" required>
+            <input id="email" type="email" name="email" required>
             <button type="submit">注册</button>
+            <button  type="button"><a href="http://localhost:8080/github"> github</a> </button>
           
         </form>
-    </div>
+</div>
 </body>
 
 </html>
